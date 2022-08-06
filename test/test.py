@@ -1,0 +1,267 @@
+import pymongo
+if __name__=="__main__":
+    print('pyMongo')
+    client=pymongo.MongoClient('mongodb://localhost:27017')
+    print(client)
+    db=client['Rahul']
+    collection=db['sampleCollection']
+
+    dict1=[
+  {
+    "_id": "62ec90182abe5468830dea7f",
+    "index": 0,
+    "guid": "24448f1d-5858-4d4d-9541-18ddb9f5cd24",
+    "isActive": True,
+    "balance": "$2,026.69",
+    "picture": "http://placehold.it/32x32",
+    "age": 29,
+    "eyeColor": "brown",
+    "name": "Guzman Burnett",
+    "gender": "male",
+    "company": "XSPORTS",
+    "email": "guzmanburnett@xsports.com",
+    "phone": "+1 (843) 400-3544",
+    "address": "617 Moultrie Street, Roderfield, American Samoa, 9393",
+    "about": "Elit culpa enim cupidatat minim nulla ad elit sit minim amet sit ut in minim. Consectetur sunt nulla pariatur incididunt adipisicing. Et deserunt quis aliqua est in labore eiusmod pariatur. Amet nostrud culpa commodo Lorem mollit dolore exercitation esse. Quis cupidatat Lorem ullamco veniam nisi aliquip Lorem minim adipisicing pariatur.\r\n",
+    "registered": "2014-07-08T04:11:52 -06:-30",
+    "latitude": 75.383724,
+    "longitude": 16.167816,
+    "tags": [
+      "officia",
+      "labore",
+      "veniam",
+      "pariatur",
+      "ipsum",
+      "ullamco",
+      "aliquip"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Shepard Montgomery"
+      },
+      {
+        "id": 1,
+        "name": "Henry Booth"
+      },
+      {
+        "id": 2,
+        "name": "Deana Stone"
+      }
+    ],
+    "greeting": "Hello, Guzman Burnett! You have 6 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "62ec9018c8ed6b752e26fe25",
+    "index": 1,
+    "guid": "be2affa1-5c6e-40c7-b926-3ef4bfda03c2",
+    "isActive": True,
+    "balance": "$1,750.37",
+    "picture": "http://placehold.it/32x32",
+    "age": 35,
+    "eyeColor": "brown",
+    "name": "Carla Mills",
+    "gender": "female",
+    "company": "COFINE",
+    "email": "carlamills@cofine.com",
+    "phone": "+1 (814) 579-3632",
+    "address": "108 Bath Avenue, Wauhillau, Pennsylvania, 4257",
+    "about": "Tempor aute dolore minim anim nulla adipisicing sunt amet excepteur pariatur officia consectetur adipisicing. Incididunt sunt Lorem dolor velit consequat est exercitation sit labore irure sunt. Nostrud velit reprehenderit exercitation mollit adipisicing labore. Nulla do est pariatur eu aute ullamco deserunt magna incididunt sit eu ipsum.\r\n",
+    "registered": "2016-02-07T12:57:28 -06:-30",
+    "latitude": -2.859712,
+    "longitude": 97.193449,
+    "tags": ["cupidatat", "consequat", "nisi", "id", "aliqua", "culpa", "ut"],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Petra Leonard"
+      },
+      {
+        "id": 1,
+        "name": "Elena Nielsen"
+      },
+      {
+        "id": 2,
+        "name": "Adele Frost"
+      }
+    ],
+    "greeting": "Hello, Carla Mills! You have 6 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "62ec9018b1fc5940324b4bee",
+    "index": 2,
+    "guid": "ea5c1438-b36c-45de-95dc-4ba236576d28",
+    "isActive": True,
+    "balance": "$3,001.13",
+    "picture": "http://placehold.it/32x32",
+    "age": 35,
+    "eyeColor": "brown",
+    "name": "Albert Obrien",
+    "gender": "male",
+    "company": "FROSNEX",
+    "email": "albertobrien@frosnex.com",
+    "phone": "+1 (924) 571-3993",
+    "address": "818 Whitney Avenue, Blue, Delaware, 5835",
+    "about": "Fugiat adipisicing mollit ea cupidatat sunt laborum eiusmod in quis. Enim do sit aliqua sint aliqua ipsum tempor in excepteur magna tempor. Et eiusmod cillum duis proident reprehenderit sit ea fugiat enim eiusmod qui.\r\n",
+    "registered": "2017-08-03T06:18:45 -06:-30",
+    "latitude": -7.315848,
+    "longitude": -142.486968,
+    "tags": [
+      "elit",
+      "veniam",
+      "commodo",
+      "nisi",
+      "amet",
+      "veniam",
+      "exercitation"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Adeline Dawson"
+      },
+      {
+        "id": 1,
+        "name": "Rosemary Hinton"
+      },
+      {
+        "id": 2,
+        "name": "Hanson Merrill"
+      }
+    ],
+    "greeting": "Hello, Albert Obrien! You have 8 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "62ec90185688f62e0850135d",
+    "index": 3,
+    "guid": "04061dc8-71da-4152-a184-07aec4ae7c6d",
+    "isActive": False,
+    "balance": "$3,722.99",
+    "picture": "http://placehold.it/32x32",
+    "age": 36,
+    "eyeColor": "green",
+    "name": "Conley Mason",
+    "gender": "male",
+    "company": "QNEKT",
+    "email": "conleymason@qnekt.com",
+    "phone": "+1 (835) 572-3675",
+    "address": "672 Oxford Walk, Belleview, Palau, 111",
+    "about": "In ex cillum culpa excepteur eu magna laboris enim est magna aliquip consectetur deserunt non. Sit voluptate quis cillum eu esse velit nostrud irure quis aliquip ea. Id labore consectetur duis non incididunt anim eiusmod. In voluptate Lorem occaecat Lorem est exercitation esse laborum. Fugiat mollit proident veniam magna enim.\r\n",
+    "registered": "2017-09-15T08:58:43 -06:-30",
+    "latitude": -74.516571,
+    "longitude": -74.318726,
+    "tags": ["cillum", "sint", "nostrud", "commodo", "qui", "Lorem", "officia"],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Noelle Holloway"
+      },
+      {
+        "id": 1,
+        "name": "Betsy Potts"
+      },
+      {
+        "id": 2,
+        "name": "Gabriela Velasquez"
+      }
+    ],
+    "greeting": "Hello, Conley Mason! You have 10 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "62ec90188e37013098d58ea2",
+    "index": 4,
+    "guid": "202b3f0e-3440-4c00-a5f4-b06725738dcd",
+    "isActive": True,
+    "balance": "$1,937.94",
+    "picture": "http://placehold.it/32x32",
+    "age": 39,
+    "eyeColor": "blue",
+    "name": "Herrera Madden",
+    "gender": "male",
+    "company": "POLARIA",
+    "email": "herreramadden@polaria.com",
+    "phone": "+1 (942) 441-3086",
+    "address": "287 Oriental Court, Vivian, Michigan, 9176",
+    "about": "Anim reprehenderit ea cupidatat exercitation adipisicing. Veniam cillum excepteur et sunt deserunt proident ipsum occaecat id laborum sint voluptate non. Mollit culpa sit consequat eu eiusmod. Fugiat anim anim officia commodo exercitation id ipsum laborum elit sunt occaecat sunt culpa consectetur.\r\n",
+    "registered": "2020-10-27T06:50:01 -06:-30",
+    "latitude": 81.930266,
+    "longitude": -13.964298,
+    "tags": [
+      "Lorem",
+      "in",
+      "dolore",
+      "reprehenderit",
+      "elit",
+      "ullamco",
+      "officia"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Alvarado Robinson"
+      },
+      {
+        "id": 1,
+        "name": "Joyner Daniels"
+      },
+      {
+        "id": 2,
+        "name": "Sandra Stephenson"
+      }
+    ],
+    "greeting": "Hello, Herrera Madden! You have 1 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "62ec90183a75d372babd7e84",
+    "index": 5,
+    "guid": "ea3eb712-dc8b-4e93-a994-731f3a1727d0",
+    "isActive": True,
+    "balance": "$3,603.81",
+    "picture": "http://placehold.it/32x32",
+    "age": 31,
+    "eyeColor": "green",
+    "name": "Todd Marsh",
+    "gender": "male",
+    "company": "VELOS",
+    "email": "toddmarsh@velos.com",
+    "phone": "+1 (941) 529-3488",
+    "address": "653 Pierrepont Street, Whipholt, Nebraska, 3408",
+    "about": "Minim aute Lorem Lorem eiusmod ullamco. Occaecat eu officia reprehenderit sunt ipsum excepteur ullamco velit. Non aute irure incididunt voluptate nostrud mollit quis irure ad. Ex eu deserunt minim anim enim irure cupidatat amet in exercitation aliqua nisi. Mollit eu cillum adipisicing velit cillum velit sint aliqua laboris velit cupidatat. Dolor dolore non ipsum ex deserunt eiusmod minim fugiat ipsum. Minim amet mollit ex nostrud ullamco elit consequat cupidatat ex ad ad ipsum.\r\n",
+    "registered": "2020-10-11T12:04:52 -06:-30",
+    "latitude": 55.779789,
+    "longitude": -179.821129,
+    "tags": [
+      "incididunt",
+      "deserunt",
+      "dolore",
+      "sit",
+      "laborum",
+      "exercitation",
+      "velit"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Holland Hensley"
+      },
+      {
+        "id": 1,
+        "name": "Sargent Odonnell"
+      },
+      {
+        "id": 2,
+        "name": "Colleen Hurst"
+      }
+    ],
+    "greeting": "Hello, Todd Marsh! You have 10 unread messages.",
+    "favoriteFruit": "strawberry"
+  }
+]
+
+for ele in dict1:
+    collection.insert_one(ele)
